@@ -9,5 +9,5 @@ class BaseComponent:
         self.page = page
 
 
-    def check_currant_url(self, expected_url: Pattern[str]):
+    def check_current_url(self, expected_url: Pattern[str]):
         expect(self.page).to_have_url(expected_url)
